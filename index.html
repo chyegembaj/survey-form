@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="survey-title">
+        <h1 id="title">
+          Freecodecamp Survey form
+        </h1>
+        <p id="description">Thanks for completing the survey form</p>
+      </div>
+      <div class="container">
+        <form id="survey-form">
+          <div class="form-control">
+            <label id="name-label" for="name">Name</label><br />
+            <input id="name" type="text" placeholder="name" required /><br />
+
+            <label for="email" id="email-label">Email</label><br />
+            <input id="email" type="email" placeholder="email" required /><br />
+
+            <label for="number" id="number-label">Age</label><br />
+            <input
+              id="number"
+              type="number"
+              min="1"
+              max="120"
+              placeholder="age"
+            />
+          </div>
+          <div>
+            <label for="dropdown">What do you like about Freecodecamp?</label
+            ><br />
+            <select id="dropdown" name="dropdown">
+              <option value="" selected>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community-help">Community Help</option>
+            </select>
+          </div>
+          <div>
+            <label>Do you find Freecodecamp useful?</label><br />
+            <label for="strongly-agree"
+              ><input
+                id="strongly-agree"
+                name="radio-button"
+                type="radio"
+                value="strongly-agree"
+              />Strongly Agree</label
+            ><br />
+            <label for="neutral" <label
+              ><input
+                id="neutral"
+                name="radio-button"
+                type="radio"
+                value="neutral"
+              />Neutral</label
+            ><br />
+            <label for="strongly-disagree"
+              ><input
+                id="strongly-disagree"
+                name="radio-button"
+                type="radio"
+                value="strongly-disagree"
+              />Strongly Disagree</label
+            >
+          </div>
+          <div>
+            <label>What courses do you recommend improvements.</label><br />
+
+            <label for="front-end"
+              ><input
+                type="checkbox"
+                id="front-end"
+                value="front-end"
+                name="front-end"
+              />Front End Development Libraries </label
+            ><br />
+            <label for="responsive"
+              ><input
+                type="checkbox"
+                id="responsive"
+                value="responsive"
+                name="responsive"
+              />Responsive Web Design </label
+            ><br />
+            <label for="visualization"
+              ><input
+                type="checkbox"
+                id="visualization"
+                value="visualization"
+                name="visualization"
+              />Data Visualization </label
+            ><br />
+            <label for="quality"
+              ><input
+                type="checkbox"
+                id="quality"
+                value="quality"
+                name="quality"
+              />Quality Assurrance </label
+            ><br />
+          </div>
+          <div>
+            <label>Additional comments</label><br />
+            <textarea
+              id="comments"
+              placeholder="Please enter additional comments here."
+            ></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
